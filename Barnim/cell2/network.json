@@ -1,0 +1,36 @@
+{
+    "version": "0.16.0",
+    "configuration": {
+        "debugGeocasting":      false
+    },
+    "globalRegion": {
+        "uplink": {
+            "delay": {
+                "type":         "ConstantDelay",
+                "delay":        100,
+                "prValue":      0,
+                "maxRetries":   2
+            },
+            "capacity":         28000000
+        },
+        "downlink": {
+            "unicast": {
+                "delay": {
+                    "type":         "ConstantDelay",
+                    "delay":        100,
+                    "prValue":      0,
+                    "maxRetries":   2
+                }
+            },
+            "multicast": {
+                "delay": {
+                    "type":         "ConstantDelay",
+                    "delay":        100,
+                    "plValue":      0
+                },
+                "usableCapacity":   0.6
+            },
+            "capacity":             42200000
+        }
+    }
+}

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- file version: 2012-11-28 -->
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="http://www.dcaiti.tu-berlin.de/research/simulation/download/get/scenarios/scenarioname/swans/swans_config.xsd">
+    <common>
+        <dimX>10000</dimX>
+        <dimY>10500</dimY>
+        <random>
+            <generator>lcg</generator>
+            <seed>0</seed>
+            <bbsP>7</bbsP>
+            <bbsQ>37</bbsQ>
+        </random>
+        <pathloss>
+            <model>freespace</model>
+            <d0>1.0</d0>
+            <d1>200.0</d1>
+            <d2>500.0</d2>
+            <n0>1.9</n0>
+            <n1>3.8</n1>
+            <n2>3.8</n2>
+        </pathloss>
+        <fastfading>
+            <model>none</model>
+            <kfactor>1</kfactor>
+        </fastfading>
+        <frequency>2400000000</frequency>
+        <bandwidth>10000000</bandwidth>
+        <temperature>290</temperature>
+        <tempfactor>10.0</tempfactor>
+        <ambientnoise>0</ambientnoise>
+        <routing>
+            <protocol>cggc</protocol>
+        </routing>
+    </common>
+    <vehicle>
+        <antennaheight>1.5</antennaheight>
+        <txpower>15</txpower>
+        <txantennagain>0</txantennagain>
+        <rxsensitivity>-91</rxsensitivity>
+        <rxthreshold>-81</rxthreshold>
+    </vehicle>
+    <rsu>
+        <antennaheight>10.0</antennaheight>
+        <txpower>15</txpower>
+        <txantennagain>0</txantennagain>
+        <rxsensitivity>-91</rxsensitivity>
+        <rxthreshold>-81</rxthreshold>
+    </rsu>
+</configuration>
+
